@@ -9,7 +9,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 import notesRoutes from './routes/notesRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import cookieParser from 'cookie-parser';
-import userRoutetes from './routes/userRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 
 
@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 app.use(authRoutes);
 app.use(notesRoutes);
-app.use(userRoutetes);
+app.use(userRoutes);
 
 
 app.use(notFoundHandler);
